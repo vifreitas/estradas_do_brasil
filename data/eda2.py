@@ -1,10 +1,10 @@
 #%% Importing Libraries
 import pandas as pd
 
-import os
-print(os.getcwd())
+#%% Importing dataframe
 
-#%% Importing dataframes
+root_folder = 'D:/Projetos Data Science/estradas_do_brasil'
+acidentes_df = pd.read_csv(f'{root_folder}/data/raw/datatran2023.csv', sep=';', encoding='ANSI')
 
-acidentes_df = pd.read_csv('/raw/datatran2023.csv', sep=';')
 # %%
+
